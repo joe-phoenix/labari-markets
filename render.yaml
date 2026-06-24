@@ -1,0 +1,16 @@
+# render.yaml — Labari Markets API backend
+# Deploy this backend/ folder as a Web Service on Render
+
+services:
+  - type: web
+    name: labari-markets-api
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MANSA_API_KEY
+        sync: false        # set manually in Render dashboard
+      - key: PORT
+        value: 3000
+    healthCheckPath: /api/status
