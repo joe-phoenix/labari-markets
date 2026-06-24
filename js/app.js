@@ -3,7 +3,7 @@
    Replace API_BASE with your Render backend URL before deploying.
    ============================================================ */
 
-const API_BASE = "https://labari-markets-api.onrender.com/api/status"; // ← update this
+const API_BASE = "https://labari-markets-api.onrender.com/api"; // ← update this
 
 // Mansa exchanges we support for the stock browser
 const SUPPORTED_EXCHANGES = ["NGX", "NSE", "JSE", "BRVM", "EGX"];
